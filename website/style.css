@@ -1,0 +1,321 @@
+/*-------------- Tekst siderne -------------------------*/
+
+h1 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 3.5rem;
+}
+
+h2 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: x-large;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.4rem;
+  font-size: x-large;
+}
+
+h5 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #39553f;
+  margin-bottom: 0;
+  margin-top: 0.7rem;
+}
+@media screen and (min-width: 769px) {
+  h5 {
+    margin-left: 2rem;
+  }
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 102%;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
+  font-size: xx-small;
+  color: #c6a788;
+}
+
+/*----------------------- Tilbageknap -----------------------------------*/
+.tilbage {
+  font-size: x-small;
+  margin-top: 1rem;
+}
+
+.tilbage :hover {
+  color: #765743;
+}
+
+h3 {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #c6a788;
+}
+
+/*---------------------------- Forside og plante -----------------------------------*/
+.planter {
+  width: 10%;
+  margin-left: 0rem;
+  margin-top: 10rem;
+}
+
+.plante {
+  /* Hjælp fra ChatGPT */
+  position: absolute;
+  z-index: 1;
+  /* Hjælp fra ChatGPT slut*/
+  width: 10%;
+  margin-left: 68rem;
+  margin-top: -11.7rem;
+}
+
+.forsidet {
+  margin-top: 10.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.forsidet h1,
+.forsidet h2 {
+  margin: 0;
+}
+
+.forsidet a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  color: #39553f;
+}
+
+.forsidet a:hover {
+  color: #d93223;
+}
+
+@media screen and (max-width: 768px) {
+  .planter {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 1.4rem;
+    width: 15%;
+  }
+
+  .plante,
+  .plantecv {
+    display: none;
+  }
+
+  .forsidet {
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+/*---------------------------- CV (om mig og CV) ----------------------------------*/
+
+.overskrift {
+  color: #39553f;
+}
+
+.plantecv {
+  /* Hjælp fra ChatGPT */
+  position: absolute;
+  z-index: 0;
+  /* Hjælp fra ChatGPT slut*/
+  width: 8%;
+  margin-left: 70rem;
+  margin-top: -12.5rem;
+}
+
+.grid-containerp {
+  display: grid;
+  background-color: #c9b49e;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 769px) {
+  .grid-containerp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.om {
+  padding-right: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .om {
+    padding-right: 0rem;
+  }
+  .img1 {
+    margin-left: 0.8rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+  }
+}
+
+.img1 {
+  width: 90%;
+  height: auto;
+  display: block;
+  border-radius: 3rem;
+  margin-bottom: 2.6rem;
+  margin-top: 2.6rem;
+}
+
+.tekstcv {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/*---------------------------- Porfolio side ----------------------------------*/
+
+/*Hjælp fra ChatGPT og tilrettet*/
+.column {
+  border: 3px solid #c9b49e;
+  background-color: #d3bca6;
+  padding: 1.8rem;
+  text-align: center;
+  border-radius: 1.5rem;
+
+  /*Zoom på elementer*/
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+/*Hjælp fra ChatGPT og tilrettet slut*/
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/*Hjælp fra ChatGPT*/
+
+.button {
+  color: #39553f;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  background-color: #d3bca6;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  transition: 0.3s all;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  display: inline-block;
+  text-align: center;
+  white-space: normal; /* Tillad tekstbrydning, hvis det er nødvendigt */
+  margin-top: 10px; /* Juster afstand over knappen */
+}
+/*Hjælp fra ChatGPT*/
+
+.button:hover {
+  color: #d93223;
+}
+
+/*---------------------------- Sider i porfolio ------------------------------------------*/
+
+.overskriftp {
+  color: #39553f;
+}
+
+#grid_2-1 {
+  display: grid;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+}
+
+#grid21,
+#grid22 {
+  display: flex;
+  border-radius: 3rem;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+}
+
+@media screen and (min-width: 769px) {
+  #grid_2-1 {
+    grid-template-columns: 4fr 3fr;
+  }
+  #grid22 {
+    margin-left: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.eksempel img {
+  max-width: 100%;
+  height: 80%;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  border: 6px solid #c9b49e;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .eksempel img {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+.button1 {
+  color: #39553f;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  background-color: #d3bca6;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  transition: 0.3s all;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  display: inline-block;
+  text-align: center;
+  white-space: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  /*zoom*/
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  transform-origin: center;
+}
+
+.button1:hover {
+  color: #d93223;
+  opacity: 0.8;
+}

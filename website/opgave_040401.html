@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="layout.css">
+    <link rel="Stylesheet" href="style.css">
+    <title>Opgave 04.04.01</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <!-- <div class="logo">Logo</div> -->
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div class="overskrifter">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="cv.html">Om mig</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="cv.html">Om mig</a></li>
+        </ul>
+    </nav>
+    <div class="overskriftp">
+        <h1>Animation</h1>
+        <h2>Opgave: 04.04.01 - Temaopgave</h2>
+    </div>
+    <div id="grid_2-1">
+        <div id="grid21">
+            <p>I dette tema kodede jeg et dynamisk website spillet “Pizza Time!”. <br>
+                Jeg startede med skitser på papir og derefter designede jeg færdigt i Adobe Illustrator ud fra
+                moodboards, style tiles og skitser i designprincippet “kawaii food”.
+                Målet var at
+                fremme cuteness og “baby bias”, derfor brugte jeg også runde, bløde former gennem sitet for at
+                ramme stilen og få en rød tråd.
+                Sitet blev bl.a. kodet med javascript og css animationer som det f.eks. ses ved figurerne. Tidtagningen
+                er en del af
+                UI-konventionerne brugt i spillet for at give vigtig information til spilleren. UI-konventioner bruges
+                også til at styre
+                spillet med f.eks. startknap. <br>For at kunne lave funktioner som dette anvendte jeg metoderne
+                addClass/removeClass
+                samt events som click, animationend og animationiteration.
+                <br>
+                For at planlægge et spændende spil, lavede jeg et spildiagram og state diagram. I state diagrammet
+                fremgår funktioner,
+                men også hvilke handlinger der medfører et bestemt scenarie. Det mere komplicerede interaktive flow,
+                hvor også if-else
+                og math.random er aktuelt. State diagrammet brugte jeg som guide, da spillet blev kodet for en mere
+                overskuelig proces
+                som det ses i eksemplet. <br>
+                Noget jeg også lærte ved produktionen af et spil er vigtigheden af ophavsret og licenser til musik og
+                billeder og dermed
+                også det at lave egen lyd og efterbehandlingen af dette i Audition.
+
+
+
+            </p>
+            <div>
+                <!--Hjælp fra ChatGPT til hvordan link åbnes i ny fane-->
+                <a class="button1" href="https://anpr0001.dk/kea/04_animation/website/index.html" target="_blank"
+                    onmousemove="zoomIn(this)" onmouseout="zoomOut(this)">Gå til
+                    website</a>
+            </div>
+        </div>
+        <div id="grid22" class="eksempel">
+            <h5>Eksempel:</h5>
+            <img src="img/t4b1.webp" alt="Billede af eksempel fra state diagram i tema 4">
+            <img src="img/t4b2.webp" alt="Billede af eksempel fra kode i javascript i tema 4">
+
+        </div>
+
+
+    </div>
+    <div class="tilbage">
+        <a href="portfolio.html">
+            <h3>Tilbage</h3>
+        </a>
+    </div>
+    <footer>Lavet af Annejette Emma Preetzmann</footer>
+    <script src="java.js"></script>
+
+</body>
+
+</html>

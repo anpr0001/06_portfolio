@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+/*-------------------- Baggrund ----------------------*/
+body {
+  max-width: 1400px;
+  margin: 5rem;
+  background-color: #fff7f8;
+}
+
+/*----------------------- Menu --------------------------*/
+header {
+  margin: -1rem;
+  margin-top: 3.5rem;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  color: #39553f;
+  background-color: #fff7f8;
+  /* Hjælp fra ChatGTP*/
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    box-shadow: none;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  display: flex;
+  /*justify-content: space-between;*/
+  margin: 0;
+  padding: 0;
+  gap: 3rem;
+  overflow-x: auto;
+}
+
+.overskrifter a {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
+  color: #c6a788;
+}
+
+.overskrifter a:hover {
+  color: #765743;
+}
+
+/*.navbar {
+  /*display: flex;
+  align-items: center;
+}*/
+
+/*
+.logo {
+  font-size: 24px;
+  margin-right: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+*/
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #c6a788;
+  margin: 0.2rem;
+  border-radius: 40px;
+}
+
+.menu {
+  background-color: #fff7f8;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  top: 60px;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  transition: left 0.5s;
+  margin-top: 4rem;
+  z-index: 1;
+  border-radius: 3rem;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 26px;
+  margin-left: 4.4rem;
+}
+
+nav.menu ul li a {
+  color: #c6a788;
+}
+
+nav.menu ul li a:hover {
+  color: #765743;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #d6beb0;
+}
+
+/*Hjælp fra ChatGPT*/
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    left: -250px;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .overskrifter {
+    display: none;
+  }
+
+  .menu-toggle.active + .overskrifter {
+    display: none;
+  }
+}
+
+/*Hjælp fra chatGPT slut*/
+
+@media screen and (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .overskrifter {
+    display: flex;
+  }
+}
